@@ -1,0 +1,22 @@
+@media only screen and (min-width: $breakpoint-desktop) {
+	.container {
+		padding-left: 80px;
+		padding-right: 80px;
+	}
+	.product-image {
+		&--large {
+			height: 468.6px;
+			object-fit: cover;
+		}
+		&--small {
+			height: 222.5px;
+			object-fit: cover;
+		}
+	}
+}
+
+@media (max-width: $breakpoint-mobile) {
+	section.intro {
+		padding-top: 30px;
+	}
+}

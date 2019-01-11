@@ -1,0 +1,54 @@
+.text-light {
+	font-family: "proxima-light";
+}
+
+.text-bold {
+	font-family: "proxima-bold";
+}
+
+.text-semi-bold {
+	font-family: "proxima-semi-bold";
+}
+
+@mixin letter-spacing($property) {
+	letter-spacing: $property;
+}
+
+a{
+	@include letter-spacing(0.5px);
+	color: $dark-grey;
+	text-decoration: none;
+	transition: 0.3s;
+	&:hover {
+		text-decoration: none;
+		&.icon--to-orange i{
+			color: $orange;
+		}
+	}
+	&.has--underline,
+	&.hover--underline:hover {
+		border-bottom: 1px solid $orange;
+		padding-bottom: 3px;
+	}
+}
+
+@each $size in $font-sizes{
+	.font-#{$size} {
+		font-size: #{$size}px;
+	}
+}
+
+.text--with-circle {
+	display: flex;
+	align-items: center;
+	div {
+		display: inline-flex;
+		width: 30px;
+		height: 30px;
+		background: $orange;
+		border-radius: 100%;
+	}
+	span {
+		margin-left: -15px;
+	}
+}

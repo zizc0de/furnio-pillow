@@ -1,0 +1,21 @@
+$colors: (
+	"light-blue": $light-blue,
+	"dark-blue": $dark-blue,
+	"dark-grey": $dark-grey,
+	"orange": $orange
+	);
+
+@each $name, $color in $colors {
+	.bg-#{$name} {
+		background: $color;
+	}
+	.color-#{$name} {
+		color: $color;
+	}
+	.color-#{$name}-important {
+		color: $color !important;
+	}
+	.to-#{$name}:hover {
+		color: $color !important;
+	}
+}

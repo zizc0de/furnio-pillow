@@ -1,0 +1,17 @@
+{
+  "name": "furnio-pillow",
+  "version": "1.0.0",
+  "description": "Furnio Pillow - Landing Page",
+  "main": "index.html",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass scss/main.scss dist/css/main.min.css --output-style compressed",
+    "watch:sass": "npm run sass -- --watch"
+  },
+  "author": "zizcode",
+  "license": "ISC"
+}

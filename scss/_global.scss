@@ -1,0 +1,32 @@
+html,
+body {
+	color: $dark-grey;
+	font-family: "proxima-regular";
+}
+
+section	{
+	padding: 60px 0;
+	min-height: 300px;
+	&.intro {
+		.intro-title {
+			color: $dark-grey;
+		}
+		.intro-subtitle {
+			font-family: "proxima-light-italic";
+			font-size: 15px;
+		}
+		.intro-desc {
+			font-size: 25px;
+			p{
+				margin-bottom: -5px;
+			}
+		}
+		.cover-image {
+			height: 320px;
+		}
+	}
+}
+
+.main-content {
+	padding-top: 80px;
+}
