@@ -23,10 +23,20 @@ section	{
 		}
 		.cover-image {
 			height: 320px;
+			animation:animatezoom 2s
 		}
 	}
 }
 
 .main-content {
 	padding-top: 80px;
+}
+
+@keyframes animatezoom{
+	from{
+		transform:scale(0)
+	}
+	to{
+		transform:scale(1)
+	}
 }
