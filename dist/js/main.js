@@ -1,8 +1,12 @@
 $(function() {
 	$('a[href*=#]').on('click', function(e) {
 		e.preventDefault();
+		var target = $(this).attr('href');
 		$(".nav-item").removeClass('active');
 		$(this).parent().addClass('active');
-		$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top - 80}, 'slow', 'linear');
+		if(target !== "#intro" && $(window).width() <= 992) {
+			$(".navbar-toggler").click();			
+		}
+		$('html, body').animate({ scrollTop: $(target).offset().top - 80}, 'slow', 'linear');
 	});
 });
